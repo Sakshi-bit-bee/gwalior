@@ -1,0 +1,10 @@
+<script>
+    var obj ={
+        n1:15,
+    };
+    function findsum(n2,n3){
+        console.log(this.n1+n2+n3);
+    }
+    var findsum =findsum.bind(obj);
+    findsum(10,5);
+</script>
